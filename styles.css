@@ -1,0 +1,116 @@
+body {
+    font-family: 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background: linear-gradient(to left, #facabe, #ffa159); 
+    color(rgb(255, 0, 0))
+
+}
+    h1 {
+   color: #9c5a5f;
+    font-size: 5em;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+/* Consultas de medios para pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        font-size: 10px; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+    
+    .container {
+        padding: 8px; /* Ajustar el padding en pantallas pequeñas */
+    }
+    
+    .header {
+        text-align: center; /* Centrar el texto en pantallas pequeñas */
+    }
+    
+    .nav {
+        display: block; /* Cambiar el diseño del menú de navegación */
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 450px;
+    height: 250px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 60px;
+    border-radius: 50px;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    max-height: 100%; /* Limitar la altura máxima del modal */
+    overflow-y: auto; /* Permitir el desplazamiento vertical si el contenido excede la altura máxima */
+    position: relative;
+}
+/* Estilo del encabezado (pregunta del acertijo) */
+#riddleQuestion {
+    font-size: 36px; /* Aumentar el tamaño del texto del encabezado */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+#riddleInput {
+    font-size: 28px; /* Aumentar el tamaño del texto del campo de entrada */
+    padding: 26px; /* Espacio interno del campo de entrada */
+    width: 80%; /* Ancho del campo de entrada */
+    margin-bottom: 20px; /* Espacio debajo del campo de entrada */
+}
+
+/* Estilo del botón */
+button {
+    font-size: 32px; /* Aumentar el tamaño del texto del botón */
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer;
+}
+
+/* Estilo del mensaje de respuesta */
+#unlockedImageContainer p {
+    font-size: 32px; /* Aumentar el tamaño del texto del mensaje */
+    margin-top: 20px; /* Espacio arriba del mensaje */
+}
+
+/* Estilo del botón de cerrar */
+.close {
+    position: absolute;
+    top: 15px; /* Ajustar la posición del botón de cerrar */
+    right: 20px;
+    cursor: pointer;
+    font-size: 32px; /* Tamaño del icono de cerrar */
+}
+
+#unlockedImageContainer img {
+    max-height: 80vh;
+    max-width: 60%;
+    height: auto;
+}
+

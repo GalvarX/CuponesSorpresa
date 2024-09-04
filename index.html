@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canjeador de Cupones
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CANJEADOR DE CUPONES</h1>
+    <div class="gallery">
+        <img src="Cupones/cupon1.jpg" alt="Imagen 1" onclick="showRiddleModal('¿Que dia nos conocimos (dd/mm/aa)?', '010922', 'Cupones/GanadorCupon1.jpg')">
+        <img src="Cupones/cupon2.jpg" alt="Imagen 2" onclick="showRiddleModal('¿Donde fue nuestra primer salida?', 'the little bar', 'Cupones/GanadorCupon2.jpg')">
+        <img src="Cupones/cupon3.jpg" alt="Imagen 3" onclick="showRiddleModal('¿Direccion exacta donde conociste a tus suegros?', 'Gabriela Mistral 3218', 'Cupones/GanadorCupon3.jpg')">
+        <img src="Cupones/Cupon4.jpg" alt="Imagen 4" onclick="showRiddleModal('¿Cual fue el lugar mas alto en el que estuvimos?', 'El uritorco', 'Cupones/GanadorCupon4.jpg')">
+        <img src="Cupones/Cupon5.jpg" alt="Imagen 5" onclick="showRiddleModal('¿Como se llamaba el lugar que merendamos en Mardel?', 'Crossaint', 'Cupones/GanadorCupon5.jpg')">
+        <img src="Cupones/Cupon6.jpg" alt="Imagen 6" onclick="showRiddleModal('¿Cual es el sueño de Gonza?', 'ir a japon', 'Cupones/GanadorCupon6.jpg')">
+        <img src="Cupones/cupon7.jpg" alt="Imagen 7" onclick="showRiddleModal('La mas dificil ¿Cual es el nombre completo del jugador favorito de tu novio?', 'Cristiano Ronaldo Dos Santos Aveiro', 'Cupones/GanadorCupon7.jpg')">
+        <img src="Cupones/cupon8.jpg" alt="Imagen 8" onclick="showRiddleModal('¿Quien es el mejor novio del mundo? jiji', 'Gonza', 'Cupones/GanadorCupon8.jpg')">
+        <img src="Cupones/Cupon9.jpg" alt="Imagen 10" onclick="showRiddleModal('¿Lugar al que fuimos mas veces?', 'McCafe', 'Cupones/GanadorCupon9.jpg')">
+    </div>
+
+    <!-- Modal para ingresar la contraseña -->
+    <div id="riddleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="riddleQuestion"></h2>
+            <input type="text" id="riddleInput" placeholder="Tu respuesta">
+            <button onclick="checkAnswer()">Responder</button>
+            <div id="unlockedImageContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
